@@ -52,5 +52,19 @@ Interpretation:
 
 ---
 
-## Repository Structure
+## Build nd Install
+If directly cloning the git repository use:
+`
+$ ./autogen.sh
+$ cd examples/
+$ mpirun [ Runtime options] ./executable
+
+## Example output:
+`
+Size (Bytes)       Communication(us)  Computation(us)   Overall(us)        Overlapping %
+1048576            120.1              130.4             245.7              3.2
+2097152            240.8              130.5             260.2              43.1
+4194304            430.3              130.5             440.9              94.8
+
+`
 

@@ -770,3 +770,178 @@ events:
         
       exitCode: 0
 ...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/FindMPI.cmake:1278 (try_compile)"
+      - "/usr/share/cmake/Modules/FindMPI.cmake:1322 (_MPI_try_staged_settings)"
+      - "/usr/share/cmake/Modules/FindMPI.cmake:1645 (_MPI_check_lang_works)"
+      - "CMakeLists.txt:4 (find_package)"
+    description: "The MPI test test_mpi for C in mode normal"
+    directories:
+      source: "/root/benchmarks/build/CMakeFiles/CMakeScratch/TryCompile-8Qk0vV"
+      binary: "/root/benchmarks/build/CMakeFiles/CMakeScratch/TryCompile-8Qk0vV"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "MPI_RESULT_C_test_mpi_normal"
+      cached: true
+      stdout: |
+        Change Dir: /root/benchmarks/build/CMakeFiles/CMakeScratch/TryCompile-8Qk0vV
+        
+        Run Build Command(s):/usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_ef293/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_ef293.dir/build.make CMakeFiles/cmTC_ef293.dir/build
+        gmake[1]: Entering directory '/root/benchmarks/build/CMakeFiles/CMakeScratch/TryCompile-8Qk0vV'
+        Building C object CMakeFiles/cmTC_ef293.dir/test_mpi.c.o
+        /usr/bin/cc  -isystem /usr/ompi5/include  -o CMakeFiles/cmTC_ef293.dir/test_mpi.c.o -c /root/benchmarks/build/CMakeFiles/CMakeScratch/TryCompile-8Qk0vV/test_mpi.c
+        Linking C executable cmTC_ef293
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ef293.dir/link.txt --verbose=1
+        /usr/bin/cc -Wl,-rpath -Wl,/usr/ompi5/lib -Wl,--enable-new-dtags CMakeFiles/cmTC_ef293.dir/test_mpi.c.o -o cmTC_ef293  -Wl,-rpath,/usr/ompi5/lib /usr/ompi5/lib/libmpi.so 
+        gmake[1]: Leaving directory '/root/benchmarks/build/CMakeFiles/CMakeScratch/TryCompile-8Qk0vV'
+        
+      exitCode: 0
+...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/FindMPI.cmake:1278 (try_compile)"
+      - "/usr/share/cmake/Modules/FindMPI.cmake:1322 (_MPI_try_staged_settings)"
+      - "/usr/share/cmake/Modules/FindMPI.cmake:1645 (_MPI_check_lang_works)"
+      - "CMakeLists.txt:4 (find_package)"
+    description: "The MPI test test_mpi for C in mode normal"
+    directories:
+      source: "/root/benchmarks/build/CMakeFiles/CMakeScratch/TryCompile-wIj7UW"
+      binary: "/root/benchmarks/build/CMakeFiles/CMakeScratch/TryCompile-wIj7UW"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "MPI_RESULT_C_test_mpi_normal"
+      cached: true
+      stdout: |
+        Change Dir: /root/benchmarks/build/CMakeFiles/CMakeScratch/TryCompile-wIj7UW
+        
+        Run Build Command(s):/usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_785ad/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_785ad.dir/build.make CMakeFiles/cmTC_785ad.dir/build
+        gmake[1]: Entering directory '/root/benchmarks/build/CMakeFiles/CMakeScratch/TryCompile-wIj7UW'
+        Building C object CMakeFiles/cmTC_785ad.dir/test_mpi.c.o
+        /usr/bin/cc  -isystem /usr/ompi5/include  -o CMakeFiles/cmTC_785ad.dir/test_mpi.c.o -c /root/benchmarks/build/CMakeFiles/CMakeScratch/TryCompile-wIj7UW/test_mpi.c
+        Linking C executable cmTC_785ad
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_785ad.dir/link.txt --verbose=1
+        /usr/bin/cc -Wl,-rpath -Wl,/usr/ompi5/lib -Wl,--enable-new-dtags CMakeFiles/cmTC_785ad.dir/test_mpi.c.o -o cmTC_785ad  -Wl,-rpath,/usr/ompi5/lib /usr/ompi5/lib/libmpi.so 
+        gmake[1]: Leaving directory '/root/benchmarks/build/CMakeFiles/CMakeScratch/TryCompile-wIj7UW'
+        
+      exitCode: 0
+...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/FindMPI.cmake:1278 (try_compile)"
+      - "/usr/share/cmake/Modules/FindMPI.cmake:1322 (_MPI_try_staged_settings)"
+      - "/usr/share/cmake/Modules/FindMPI.cmake:1645 (_MPI_check_lang_works)"
+      - "CMakeLists.txt:4 (find_package)"
+    description: "The MPI test test_mpi for C in mode normal"
+    directories:
+      source: "/root/benchmarks/build/CMakeFiles/CMakeScratch/TryCompile-9uiSby"
+      binary: "/root/benchmarks/build/CMakeFiles/CMakeScratch/TryCompile-9uiSby"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "MPI_RESULT_C_test_mpi_normal"
+      cached: true
+      stdout: |
+        Change Dir: /root/benchmarks/build/CMakeFiles/CMakeScratch/TryCompile-9uiSby
+        
+        Run Build Command(s):/usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_d24c2/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_d24c2.dir/build.make CMakeFiles/cmTC_d24c2.dir/build
+        gmake[1]: Entering directory '/root/benchmarks/build/CMakeFiles/CMakeScratch/TryCompile-9uiSby'
+        Building C object CMakeFiles/cmTC_d24c2.dir/test_mpi.c.o
+        /usr/bin/cc  -isystem /usr/ompi5/include  -o CMakeFiles/cmTC_d24c2.dir/test_mpi.c.o -c /root/benchmarks/build/CMakeFiles/CMakeScratch/TryCompile-9uiSby/test_mpi.c
+        Linking C executable cmTC_d24c2
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d24c2.dir/link.txt --verbose=1
+        /usr/bin/cc -Wl,-rpath -Wl,/usr/ompi5/lib -Wl,--enable-new-dtags CMakeFiles/cmTC_d24c2.dir/test_mpi.c.o -o cmTC_d24c2  -Wl,-rpath,/usr/ompi5/lib /usr/ompi5/lib/libmpi.so 
+        gmake[1]: Leaving directory '/root/benchmarks/build/CMakeFiles/CMakeScratch/TryCompile-9uiSby'
+        
+      exitCode: 0
+...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/FindMPI.cmake:1278 (try_compile)"
+      - "/usr/share/cmake/Modules/FindMPI.cmake:1322 (_MPI_try_staged_settings)"
+      - "/usr/share/cmake/Modules/FindMPI.cmake:1645 (_MPI_check_lang_works)"
+      - "CMakeLists.txt:4 (find_package)"
+    description: "The MPI test test_mpi for C in mode normal"
+    directories:
+      source: "/root/benchmarks/build/CMakeFiles/CMakeScratch/TryCompile-KSFvZN"
+      binary: "/root/benchmarks/build/CMakeFiles/CMakeScratch/TryCompile-KSFvZN"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "MPI_RESULT_C_test_mpi_normal"
+      cached: true
+      stdout: |
+        Change Dir: /root/benchmarks/build/CMakeFiles/CMakeScratch/TryCompile-KSFvZN
+        
+        Run Build Command(s):/usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_76296/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_76296.dir/build.make CMakeFiles/cmTC_76296.dir/build
+        gmake[1]: Entering directory '/root/benchmarks/build/CMakeFiles/CMakeScratch/TryCompile-KSFvZN'
+        Building C object CMakeFiles/cmTC_76296.dir/test_mpi.c.o
+        /usr/bin/cc  -isystem /usr/ompi5/include  -o CMakeFiles/cmTC_76296.dir/test_mpi.c.o -c /root/benchmarks/build/CMakeFiles/CMakeScratch/TryCompile-KSFvZN/test_mpi.c
+        Linking C executable cmTC_76296
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_76296.dir/link.txt --verbose=1
+        /usr/bin/cc -Wl,-rpath -Wl,/usr/ompi5/lib -Wl,--enable-new-dtags CMakeFiles/cmTC_76296.dir/test_mpi.c.o -o cmTC_76296  -Wl,-rpath,/usr/ompi5/lib /usr/ompi5/lib/libmpi.so 
+        gmake[1]: Leaving directory '/root/benchmarks/build/CMakeFiles/CMakeScratch/TryCompile-KSFvZN'
+        
+      exitCode: 0
+...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/FindMPI.cmake:1278 (try_compile)"
+      - "/usr/share/cmake/Modules/FindMPI.cmake:1322 (_MPI_try_staged_settings)"
+      - "/usr/share/cmake/Modules/FindMPI.cmake:1645 (_MPI_check_lang_works)"
+      - "CMakeLists.txt:4 (find_package)"
+    description: "The MPI test test_mpi for C in mode normal"
+    directories:
+      source: "/root/benchmarks/build/CMakeFiles/CMakeScratch/TryCompile-vul775"
+      binary: "/root/benchmarks/build/CMakeFiles/CMakeScratch/TryCompile-vul775"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "MPI_RESULT_C_test_mpi_normal"
+      cached: true
+      stdout: |
+        Change Dir: /root/benchmarks/build/CMakeFiles/CMakeScratch/TryCompile-vul775
+        
+        Run Build Command(s):/usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_386ef/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_386ef.dir/build.make CMakeFiles/cmTC_386ef.dir/build
+        gmake[1]: Entering directory '/root/benchmarks/build/CMakeFiles/CMakeScratch/TryCompile-vul775'
+        Building C object CMakeFiles/cmTC_386ef.dir/test_mpi.c.o
+        /usr/bin/cc  -isystem /usr/ompi5/include  -o CMakeFiles/cmTC_386ef.dir/test_mpi.c.o -c /root/benchmarks/build/CMakeFiles/CMakeScratch/TryCompile-vul775/test_mpi.c
+        Linking C executable cmTC_386ef
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_386ef.dir/link.txt --verbose=1
+        /usr/bin/cc -Wl,-rpath -Wl,/usr/ompi5/lib -Wl,--enable-new-dtags CMakeFiles/cmTC_386ef.dir/test_mpi.c.o -o cmTC_386ef  -Wl,-rpath,/usr/ompi5/lib /usr/ompi5/lib/libmpi.so 
+        gmake[1]: Leaving directory '/root/benchmarks/build/CMakeFiles/CMakeScratch/TryCompile-vul775'
+        
+      exitCode: 0
+...
