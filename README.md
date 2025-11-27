@@ -33,7 +33,7 @@ Interpretation:
 
 ---
 
-## Features
+### Features
 
 - 2D Cartesian neighbor exchange: left, right, top, bottom
 - Nonblocking communication: `MPI_Isend`, `MPI_Irecv`
@@ -52,19 +52,30 @@ Interpretation:
 
 ---
 
-## Build nd Install
+### Build nd Install
 If directly cloning the git repository use:
-`
+```sh
 $ ./autogen.sh
 $ cd examples/
 $ mpirun [ Runtime options] ./executable
-
-## Example output:
-`
+```
+### Example output:
+```
 Size (Bytes)       Communication(us)  Computation(us)   Overall(us)        Overlapping %
-1048576            120.1              130.4             245.7              3.2
-2097152            240.8              130.5             260.2              43.1
-4194304            430.3              130.5             440.9              94.8
+65536               12.653              13.892              26.758              3.544
+131072              18.492              19.534              37.685              1.865
+262144              30.030              31.562              60.026              5.232
+524288              68.748              70.046              138.584             0.961
+1048576             141.297             143.109             277.034             5.218
+2097152             267.361             269.240             538.615             0.140
+4194304             617.473             618.236             1165.087            11.309
+8388608             1363.551            1362.518            2776.560            0.000
+16777216            3885.356            3878.962            7623.089            3.640
 
-`
+```
+
+## How does NOM work?
+Plese refer to this paper for more details [Progressing Non-blocking Two-Sided Communication Using BlueField DPUs](https://doi.org/10.1007/978-3-032-03281-2_1)
+
+
 
