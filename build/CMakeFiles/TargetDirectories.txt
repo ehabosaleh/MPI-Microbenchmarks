@@ -1,0 +1,4 @@
+/root/benchmarks/build/CMakeFiles/nom.dir
+/root/benchmarks/build/CMakeFiles/neighbor-overlap-microbenchmark.dir
+/root/benchmarks/build/CMakeFiles/edit_cache.dir
+/root/benchmarks/build/CMakeFiles/rebuild_cache.dir

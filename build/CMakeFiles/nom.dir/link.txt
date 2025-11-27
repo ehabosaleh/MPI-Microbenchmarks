@@ -1,0 +1,2 @@
+/usr/bin/ar qc libnom.a CMakeFiles/nom.dir/src/nom.c.o CMakeFiles/nom.dir/src/grid.c.o CMakeFiles/nom.dir/src/compute.c.o
+/usr/bin/ranlib libnom.a

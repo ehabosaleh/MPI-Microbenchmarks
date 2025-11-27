@@ -1,0 +1,1 @@
+/usr/bin/cc -Wl,-rpath -Wl,/usr/ompi5/lib -Wl,--enable-new-dtags "CMakeFiles/neighbor-overlap-microbenchmark.dir/examples/main.c.o" -o /root/benchmarks/examples/neighbor-overlap-microbenchmark  -Wl,-rpath,/usr/ompi5/lib libnom.a /usr/ompi5/lib/libmpi.so -lpthread -lm 
