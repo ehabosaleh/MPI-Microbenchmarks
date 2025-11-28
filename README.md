@@ -49,7 +49,6 @@ Interpretation:
   - NIC offload capabilities  
   - MPI asynchronous progress behavior  
   - UCX/OFI progress engines  
-
 ---
 
 ### Build nd Install
