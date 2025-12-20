@@ -73,8 +73,5 @@ Size (Bytes)       Communication(us)  Computation(us)   Overall(us)        Overl
 
 ```
 
-## How does NMPM work?
-Plese refer to this paper for more details [Progressing Non-blocking Two-Sided Communication Using BlueField DPUs](https://doi.org/10.1007/978-3-032-03281-2_1)
-
 
 
