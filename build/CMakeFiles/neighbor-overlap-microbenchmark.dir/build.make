@@ -72,28 +72,28 @@ include CMakeFiles/neighbor-overlap-microbenchmark.dir/flags.make
 CMakeFiles/neighbor-overlap-microbenchmark.dir/codegen:
 .PHONY : CMakeFiles/neighbor-overlap-microbenchmark.dir/codegen
 
-CMakeFiles/neighbor-overlap-microbenchmark.dir/examples/main.c.o: CMakeFiles/neighbor-overlap-microbenchmark.dir/flags.make
-CMakeFiles/neighbor-overlap-microbenchmark.dir/examples/main.c.o: /Users/di93qad/mpi-microbenchmark/examples/main.c
-CMakeFiles/neighbor-overlap-microbenchmark.dir/examples/main.c.o: CMakeFiles/neighbor-overlap-microbenchmark.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/di93qad/mpi-microbenchmark/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/neighbor-overlap-microbenchmark.dir/examples/main.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/neighbor-overlap-microbenchmark.dir/examples/main.c.o -MF CMakeFiles/neighbor-overlap-microbenchmark.dir/examples/main.c.o.d -o CMakeFiles/neighbor-overlap-microbenchmark.dir/examples/main.c.o -c /Users/di93qad/mpi-microbenchmark/examples/main.c
+CMakeFiles/neighbor-overlap-microbenchmark.dir/src/main/main.c.o: CMakeFiles/neighbor-overlap-microbenchmark.dir/flags.make
+CMakeFiles/neighbor-overlap-microbenchmark.dir/src/main/main.c.o: /Users/di93qad/mpi-microbenchmark/src/main/main.c
+CMakeFiles/neighbor-overlap-microbenchmark.dir/src/main/main.c.o: CMakeFiles/neighbor-overlap-microbenchmark.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/di93qad/mpi-microbenchmark/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/neighbor-overlap-microbenchmark.dir/src/main/main.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/neighbor-overlap-microbenchmark.dir/src/main/main.c.o -MF CMakeFiles/neighbor-overlap-microbenchmark.dir/src/main/main.c.o.d -o CMakeFiles/neighbor-overlap-microbenchmark.dir/src/main/main.c.o -c /Users/di93qad/mpi-microbenchmark/src/main/main.c
 
-CMakeFiles/neighbor-overlap-microbenchmark.dir/examples/main.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/neighbor-overlap-microbenchmark.dir/examples/main.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/di93qad/mpi-microbenchmark/examples/main.c > CMakeFiles/neighbor-overlap-microbenchmark.dir/examples/main.c.i
+CMakeFiles/neighbor-overlap-microbenchmark.dir/src/main/main.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/neighbor-overlap-microbenchmark.dir/src/main/main.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/di93qad/mpi-microbenchmark/src/main/main.c > CMakeFiles/neighbor-overlap-microbenchmark.dir/src/main/main.c.i
 
-CMakeFiles/neighbor-overlap-microbenchmark.dir/examples/main.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/neighbor-overlap-microbenchmark.dir/examples/main.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/di93qad/mpi-microbenchmark/examples/main.c -o CMakeFiles/neighbor-overlap-microbenchmark.dir/examples/main.c.s
+CMakeFiles/neighbor-overlap-microbenchmark.dir/src/main/main.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/neighbor-overlap-microbenchmark.dir/src/main/main.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/di93qad/mpi-microbenchmark/src/main/main.c -o CMakeFiles/neighbor-overlap-microbenchmark.dir/src/main/main.c.s
 
 # Object files for target neighbor-overlap-microbenchmark
 neighbor__overlap__microbenchmark_OBJECTS = \
-"CMakeFiles/neighbor-overlap-microbenchmark.dir/examples/main.c.o"
+"CMakeFiles/neighbor-overlap-microbenchmark.dir/src/main/main.c.o"
 
 # External object files for target neighbor-overlap-microbenchmark
 neighbor__overlap__microbenchmark_EXTERNAL_OBJECTS =
 
-neighbor-overlap-microbenchmark: CMakeFiles/neighbor-overlap-microbenchmark.dir/examples/main.c.o
+neighbor-overlap-microbenchmark: CMakeFiles/neighbor-overlap-microbenchmark.dir/src/main/main.c.o
 neighbor-overlap-microbenchmark: CMakeFiles/neighbor-overlap-microbenchmark.dir/build.make
 neighbor-overlap-microbenchmark: libnom.a
 neighbor-overlap-microbenchmark: /opt/homebrew/Cellar/open-mpi/5.0.7/lib/libmpi.dylib

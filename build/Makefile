@@ -187,30 +187,6 @@ neighbor-overlap-microbenchmark/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/neighbor-overlap-microbenchmark.dir/build.make CMakeFiles/neighbor-overlap-microbenchmark.dir/build
 .PHONY : neighbor-overlap-microbenchmark/fast
 
-examples/main.o: examples/main.c.o
-.PHONY : examples/main.o
-
-# target to build an object file
-examples/main.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/neighbor-overlap-microbenchmark.dir/build.make CMakeFiles/neighbor-overlap-microbenchmark.dir/examples/main.c.o
-.PHONY : examples/main.c.o
-
-examples/main.i: examples/main.c.i
-.PHONY : examples/main.i
-
-# target to preprocess a source file
-examples/main.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/neighbor-overlap-microbenchmark.dir/build.make CMakeFiles/neighbor-overlap-microbenchmark.dir/examples/main.c.i
-.PHONY : examples/main.c.i
-
-examples/main.s: examples/main.c.s
-.PHONY : examples/main.s
-
-# target to generate assembly for a file
-examples/main.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/neighbor-overlap-microbenchmark.dir/build.make CMakeFiles/neighbor-overlap-microbenchmark.dir/examples/main.c.s
-.PHONY : examples/main.c.s
-
 src/compute.o: src/compute.c.o
 .PHONY : src/compute.o
 
@@ -259,6 +235,30 @@ src/grid.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/nom.dir/build.make CMakeFiles/nom.dir/src/grid.c.s
 .PHONY : src/grid.c.s
 
+src/main/main.o: src/main/main.c.o
+.PHONY : src/main/main.o
+
+# target to build an object file
+src/main/main.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/neighbor-overlap-microbenchmark.dir/build.make CMakeFiles/neighbor-overlap-microbenchmark.dir/src/main/main.c.o
+.PHONY : src/main/main.c.o
+
+src/main/main.i: src/main/main.c.i
+.PHONY : src/main/main.i
+
+# target to preprocess a source file
+src/main/main.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/neighbor-overlap-microbenchmark.dir/build.make CMakeFiles/neighbor-overlap-microbenchmark.dir/src/main/main.c.i
+.PHONY : src/main/main.c.i
+
+src/main/main.s: src/main/main.c.s
+.PHONY : src/main/main.s
+
+# target to generate assembly for a file
+src/main/main.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/neighbor-overlap-microbenchmark.dir/build.make CMakeFiles/neighbor-overlap-microbenchmark.dir/src/main/main.c.s
+.PHONY : src/main/main.c.s
+
 src/nom.o: src/nom.c.o
 .PHONY : src/nom.o
 
@@ -297,15 +297,15 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... neighbor-overlap-microbenchmark"
 	@echo "... nom"
-	@echo "... examples/main.o"
-	@echo "... examples/main.i"
-	@echo "... examples/main.s"
 	@echo "... src/compute.o"
 	@echo "... src/compute.i"
 	@echo "... src/compute.s"
 	@echo "... src/grid.o"
 	@echo "... src/grid.i"
 	@echo "... src/grid.s"
+	@echo "... src/main/main.o"
+	@echo "... src/main/main.i"
+	@echo "... src/main/main.s"
 	@echo "... src/nom.o"
 	@echo "... src/nom.i"
 	@echo "... src/nom.s"

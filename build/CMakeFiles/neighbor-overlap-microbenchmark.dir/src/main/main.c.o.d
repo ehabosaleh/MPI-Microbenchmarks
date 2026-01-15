@@ -1,5 +1,5 @@
-CMakeFiles/neighbor-overlap-microbenchmark.dir/examples/main.c.o: \
-  /Users/di93qad/mpi-microbenchmark/examples/main.c \
+CMakeFiles/neighbor-overlap-microbenchmark.dir/src/main/main.c.o: \
+  /Users/di93qad/mpi-microbenchmark/src/main/main.c \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/stdio.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdio.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_bounds.h \

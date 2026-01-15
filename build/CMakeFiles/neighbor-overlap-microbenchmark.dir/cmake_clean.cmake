@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/neighbor-overlap-microbenchmark.dir/examples/main.c.o"
-  "CMakeFiles/neighbor-overlap-microbenchmark.dir/examples/main.c.o.d"
+  "CMakeFiles/neighbor-overlap-microbenchmark.dir/src/main/main.c.o"
+  "CMakeFiles/neighbor-overlap-microbenchmark.dir/src/main/main.c.o.d"
   "neighbor-overlap-microbenchmark"
   "neighbor-overlap-microbenchmark.pdb"
 )

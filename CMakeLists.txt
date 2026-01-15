@@ -26,7 +26,7 @@ target_link_libraries(nom PUBLIC
 )
 
 add_executable(neighbor-overlap-microbenchmark
-    examples/main.c
+    src/main/main.c
 )
 
 target_link_libraries(neighbor-overlap-microbenchmark PRIVATE nom)

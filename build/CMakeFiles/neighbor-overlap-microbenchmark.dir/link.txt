@@ -1,1 +1,1 @@
-/usr/bin/cc  -arch arm64 -Wl,-search_paths_first -Wl,-headerpad_max_install_names "CMakeFiles/neighbor-overlap-microbenchmark.dir/examples/main.c.o" -o neighbor-overlap-microbenchmark  libnom.a /opt/homebrew/Cellar/open-mpi/5.0.7/lib/libmpi.dylib -lpthread -lm
+/usr/bin/cc  -arch arm64 -Wl,-search_paths_first -Wl,-headerpad_max_install_names "CMakeFiles/neighbor-overlap-microbenchmark.dir/src/main/main.c.o" -o neighbor-overlap-microbenchmark  libnom.a /opt/homebrew/Cellar/open-mpi/5.0.7/lib/libmpi.dylib -lpthread -lm
