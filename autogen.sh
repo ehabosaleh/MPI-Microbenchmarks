@@ -1,9 +1,9 @@
 #!/bin/sh
 
-cd build/
-cmake ..
-make 
-cd ..
+rm -rf build
+cmake -S . -B build
+cmake --build build
+cmake --install build --prefix $HOME/nom
 
 echo "microbenchmark is compiled on $PWD/example/"
 

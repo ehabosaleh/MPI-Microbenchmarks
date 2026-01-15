@@ -1,8 +1,8 @@
 file(REMOVE_RECURSE
-  "/root/benchmarks/examples/neighbor-overlap-microbenchmark"
-  "/root/benchmarks/examples/neighbor-overlap-microbenchmark.pdb"
   "CMakeFiles/neighbor-overlap-microbenchmark.dir/examples/main.c.o"
   "CMakeFiles/neighbor-overlap-microbenchmark.dir/examples/main.c.o.d"
+  "neighbor-overlap-microbenchmark"
+  "neighbor-overlap-microbenchmark.pdb"
 )
 
 # Per-language clean rules from dependency scanning.

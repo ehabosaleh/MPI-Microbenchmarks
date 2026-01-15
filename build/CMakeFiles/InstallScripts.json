@@ -1,0 +1,7 @@
+{
+	"InstallScripts" : 
+	[
+		"/Users/di93qad/mpi-microbenchmark/build/cmake_install.cmake"
+	],
+	"Parallel" : false
+}
