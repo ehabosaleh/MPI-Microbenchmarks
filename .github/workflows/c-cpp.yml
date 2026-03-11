@@ -14,4 +14,6 @@ jobs:
     steps:
     - uses: actions/checkout@v4
     - name: make distcheck
-      run: ./autogen.sh
+      run: |
+        ./autogen.sh
+        mpirun -np 36 ./bin/neighbor-overlap-microbenchmark
