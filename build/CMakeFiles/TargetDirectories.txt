@@ -1,8 +1,0 @@
-/Users/di93qad/mpi-microbenchmark/build/CMakeFiles/nom.dir
-/Users/di93qad/mpi-microbenchmark/build/CMakeFiles/neighbor-overlap-microbenchmark.dir
-/Users/di93qad/mpi-microbenchmark/build/CMakeFiles/edit_cache.dir
-/Users/di93qad/mpi-microbenchmark/build/CMakeFiles/rebuild_cache.dir
-/Users/di93qad/mpi-microbenchmark/build/CMakeFiles/list_install_components.dir
-/Users/di93qad/mpi-microbenchmark/build/CMakeFiles/install.dir
-/Users/di93qad/mpi-microbenchmark/build/CMakeFiles/install/local.dir
-/Users/di93qad/mpi-microbenchmark/build/CMakeFiles/install/strip.dir
