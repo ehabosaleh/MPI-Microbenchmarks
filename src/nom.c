@@ -6,73 +6,67 @@
 
 int run_overlap_benchmark(int rank, int size){
 	int iter;
-    	double t_pure=0, t_pure_total=0;
-    	double tcomp=0, tcomp_total=0;
-    	double t_ovrl=0, t_ovrl_total=0;
-    	double overlap=0, overlap_avr=0;
-    	double t_pure_total0=0, tcomp_total0=0, t_ovrl_total0=0;
+	double t_pure=0, t_pure_total=0;
+	double tcomp=0, tcomp_total=0;
+	double t_ovrl=0, t_ovrl_total=0;
+	double overlap=0, overlap_avr=0;
+	double t_pure_total0=0, tcomp_total0=0, t_ovrl_total0=0;
 	int left=0,right=0,top=0,bottom=0;
 	int dims[2], coords[2];
-
 	MPI_Comm_rank(MPI_COMM_WORLD,&rank);
-    	MPI_Comm_size(MPI_COMM_WORLD,&size);
+	MPI_Comm_size(MPI_COMM_WORLD,&size);
+	
+	int sqrt_size = (int)sqrt((double)size);
+	if(sqrt_size * sqrt_size != size){
+		if(rank==0){
+			fprintf(stderr, "Number of processes must be a perfect square\n");
+		}
+		MPI_Finalize();
+		return -1;
+	}
+	
+	dims[0]=dims[1]=sqrt_size;
 
-    	int sqrt_size = (int)sqrt((double)size);
-    	if (sqrt_size * sqrt_size != size) {
-        	if (rank == 0) {
-            		fprintf(stderr, "Number of processes must be a perfect square\n");
-        	}
-        MPI_Finalize();
-        return -1;
-    	}
+	coords[0]=rank/sqrt_size;
+	coords[1]=rank%sqrt_size;
 
-    	dims[0]=dims[1]=sqrt_size;
+	left=(coords[1]==0)? MPI_PROC_NULL:rank-1;
+	right=(coords[1]==dims[1]-1)?MPI_PROC_NULL:rank+1;
+	top=(coords[0]==0)? MPI_PROC_NULL:rank-sqrt_size;
+	bottom=(coords[0]==dims[0]-1)?MPI_PROC_NULL:rank + sqrt_size;
+	
+	init_arrays();
 
-    	coords[0]=rank/sqrt_size;
-    	coords[1]=rank%sqrt_size;
+    	if(rank==0){
+		printf("%-20s%-20s%-20s%-20s%-20s\n","Size (Bytes)","Communication(us)","Computation(us)","Overall","Overlapping %");
+	}
+	
+	MPI_Request *reqs=(MPI_Request*)malloc(2*size*sizeof(MPI_Request));
+	for (long local_N=MIN_MESSAGE_SIZE;local_N <= MAX_MESSAGE_SIZE; local_N *= 2){
+		char *u_0= (char*)malloc(local_N);
+		char *u_1= (char*)malloc(local_N);
+		char *u_2= (char*)malloc(local_N);
+		char *u_3= (char*)malloc(local_N);
+		char *u_left= (char*)malloc(local_N);
+		char *u_right= (char*)malloc(local_N);
+		char *u_top= (char*)malloc(local_N);
+		char *u_bottom= (char*)malloc(local_N);
+		for(long i=0;i<local_N;i++){
+			u_0[i]= 'a';
+			u_1[i]= 'b';
+			u_2[i]= 'c';
+			u_3[i]= 'd';
+			u_left[i]= 'f';
+			u_right[i]= 'g';
+			u_top[i]= 'h';
+			u_bottom[i]= 'i';
+		}
+		t_pure=0;
+		t_pure_total=0;
+		tcomp_total=0;
+		t_ovrl_total=0;
 
-    	left=(coords[1]==0)? MPI_PROC_NULL:rank-1;
-    	right=(coords[1]==dims[1]-1)?MPI_PROC_NULL:rank+1;
-    	top=(coords[0]==0)? MPI_PROC_NULL:rank-sqrt_size;
-    	bottom=(coords[0]==dims[0]-1)?MPI_PROC_NULL:rank + sqrt_size;
-
-    	init_arrays();
-
-    	if (rank==0) {
-        	printf("%-20s%-20s%-20s%-20s%-20s\n","Size (Bytes)","Communication(us)","Computation(us)","Overall","Overlapping %");
-    	}
-
-    	/* At most 8 requests (4 neighbors * 2) */
-    	MPI_Request *reqs=(MPI_Request*)malloc(2*size*sizeof(MPI_Request));
-    	for (long local_N=MIN_MESSAGE_SIZE;local_N <= MAX_MESSAGE_SIZE; local_N *= 2) {
-
-        	char *u_0      = (char *)malloc(local_N);
-        	char *u_1      = (char *)malloc(local_N);
-        	char *u_2      = (char *)malloc(local_N);
-        	char *u_3      = (char *)malloc(local_N);
-        	char *u_left   = (char *)malloc(local_N);
-        	char *u_right  = (char *)malloc(local_N);
-        	char *u_top    = (char *)malloc(local_N);
-        	char *u_bottom = (char *)malloc(local_N);
-
-        	for(long i=0;i<local_N;i++) {
-            		u_0[i]      = 'a';
-            		u_1[i]      = 'b';
-            		u_2[i]      = 'c';
-            		u_3[i]      = 'd';
-            		u_left[i]   = 'f';
-            		u_right[i]  = 'g';
-            		u_top[i]    = 'h';
-            		u_bottom[i] = 'i';
-        	}
-
-        	t_pure=0;
-        	t_pure_total=0;
-        	tcomp_total=0;
-        	t_ovrl_total=0;
-
-        	/* Phase-1: Pure communication time */
-        	for (iter =0;iter< MAX_ITER;iter++){
+        	for(iter =0;iter< MAX_ITER;iter++){
             		int req_count=0;
             		double init_time=MPI_Wtime();
 
