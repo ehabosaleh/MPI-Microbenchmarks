@@ -1,10 +1,5 @@
-# MPI Microbenchmarks
 
-The primary benchmark included is the **Non-blocking Multi-player Ping-pong Microbenchmark (NMPM)**, which measures the ability of an MPI stack and network hardware to overlap nonblocking communication with computation.
-
----
-
-## Non-blocking Multi-player Ping-pong Microbenchmark (NMPM)
+# Non-blocking Multi-player Ping-pong Microbenchmark (NMPM)
 
 NMPM quantifies how much communication can be hidden behind computation when using nonblocking MPI operations (`MPI_Isend`, `MPI_Irecv`, `MPI_Waitall`) in a 2D neighbor-exchange pattern.
 
