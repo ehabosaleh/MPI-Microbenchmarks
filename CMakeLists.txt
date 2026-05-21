@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.15)
-project(Neighbor-Overlap-Microbenchmark C)
+project(Neighbor-Overlap-Microbenchmark VERSION 1.0.0 LANGUAGES C)
 
 find_package(MPI REQUIRED)
 
