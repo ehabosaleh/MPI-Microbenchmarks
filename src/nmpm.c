@@ -1,4 +1,4 @@
-#include"nom.h"
+#include"nmpm.h"
 #include<math.h>
 #include<stdlib.h>
 #include<stdio.h>

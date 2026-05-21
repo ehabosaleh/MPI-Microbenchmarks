@@ -1,10 +1,10 @@
-#ifndef NOM_H
-#define NOM_H
+#ifndef NMPM_H
+#define NMPM_H
 
 #include<mpi.h>
 
 #ifndef MAX_ITER
-#define MAX_ITER 200
+#define MAX_ITER 1000
 #endif
 
 #ifndef SKIP
